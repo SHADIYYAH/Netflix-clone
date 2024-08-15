@@ -1,9 +1,11 @@
 import React from 'react'
 import KidsImage from "../assets/images/kids-image.png"
+import Section from './shared/Section'
 const KidsSection = () => {
   return (
     <div className="bg-black text-white py-12">
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+   <Section>
+   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
       <div className="flex-1 md:mr-10">
         <img src={KidsImage} alt="Phone" className="w-full md:max-w-xs mx-auto" />
       </div>
@@ -12,6 +14,8 @@ const KidsSection = () => {
         <p className="text-lg">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
       </div>
     </div>
+   </Section>
+   
   </div>
   )
 }

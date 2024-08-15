@@ -30,16 +30,26 @@ import TvSection from './components/TvSection'
 import MobileSection from './components/MobileSection'
 import WatchSection from './components/WatchSection'
 import KidsSection from './components/KidsSection'
+import Faq from './components/Faq'
+
+
 
 const App = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
+
+  
       <TvSection/>
       <MobileSection/>
       <WatchSection/>
       <KidsSection/>
+      <Faq/>
+
+
+     
+    
     </div>
   )
 }
