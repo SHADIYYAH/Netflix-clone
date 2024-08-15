@@ -26,12 +26,20 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import TvSection from './components/TvSection'
+import MobileSection from './components/MobileSection'
+import WatchSection from './components/WatchSection'
+import KidsSection from './components/KidsSection'
 
 const App = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
+      <TvSection/>
+      <MobileSection/>
+      <WatchSection/>
+      <KidsSection/>
     </div>
   )
 }

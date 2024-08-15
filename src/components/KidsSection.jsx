@@ -1,0 +1,19 @@
+import React from 'react'
+import KidsImage from "../assets/images/kids-image.png"
+const KidsSection = () => {
+  return (
+    <div className="bg-black text-white py-12">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+      <div className="flex-1 md:mr-10">
+        <img src={KidsImage} alt="Phone" className="w-full md:max-w-xs mx-auto" />
+      </div>
+      <div className="flex-1 mt-8 md:mt-0">
+        <h2 className="text-4xl font-bold mb-4">Create profiles for kids</h2>
+        <p className="text-lg">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+      </div>
+    </div>
+  </div>
+  )
+}
+
+export default KidsSection
