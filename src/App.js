@@ -23,35 +23,82 @@
 // }
 
 // export default App;
-import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import TvSection from './components/TvSection'
-import MobileSection from './components/MobileSection'
-import WatchSection from './components/WatchSection'
-import KidsSection from './components/KidsSection'
-import Faq from './components/Faq'
+
+
+// import React from 'react'
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import SignIn from '../src/pages/SignIn';
+// import Navbar from './components/Navbar'
+// import Hero from './components/Hero'
+// import TvSection from './components/TvSection'
+// import MobileSection from './components/MobileSection'
+// import WatchSection from './components/WatchSection'
+// import KidsSection from './components/KidsSection'
+// import Faq from './components/Faq'
+// import Footer from './components/Footer'
 
 
 
-const App = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Hero/>
+// const App = () => {
+//   return (
+//     <div>
+//       <Router>
+//         <Routes>
+//         <Route path="/login" element={<SignIn />} />
+//         </Routes>
+//       </Router>
+//       <Navbar/>
+//       <Hero/>
 
   
-      <TvSection/>
-      <MobileSection/>
-      <WatchSection/>
-      <KidsSection/>
-      <Faq/>
+//       <TvSection/>
+//       <MobileSection/>
+//       <WatchSection/>
+//       <KidsSection/>
+//       <Faq/>
+//       <Footer/>
 
 
      
     
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SignIn from '../src/pages/SignIn';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import TvSection from './components/TvSection';
+import MobileSection from './components/MobileSection';
+import WatchSection from './components/WatchSection';
+import KidsSection from './components/KidsSection';
+import Faq from './components/Faq';
+import Footer from './components/Footer';
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/login" element={<SignIn />} />
+        
+        </Routes>
+        <Hero />
+        <TvSection />
+        <MobileSection />
+        <WatchSection />
+        <KidsSection />
+        <Faq />
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;

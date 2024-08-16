@@ -1,14 +1,16 @@
 import React from "react";
 
 import StrangerThings from "../assets/images/boxshot-strangerthings.png";
-// import phoneImage from "../assets/images/mobile.jpg"
+
 import phoneImage from "../assets/images/mobile.jpg";
 import Icon from "../assets/icons/icon.gif";
+import Section from "./shared/Section";
 
 const MobileSection = () => {
   return (
-    <section className="py-12 border-b border-gray-700 bg-black">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center px-4">
+    <section className="py-12 bg-black">
+        <Section>
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center px-4">
         <div className="relative w-full md:w-1/2 flex justify-center">
           <img
             src={phoneImage}
@@ -40,6 +42,8 @@ const MobileSection = () => {
           </p>
         </div>
       </div>
+        </Section>
+      
     </section>
   );
 };
